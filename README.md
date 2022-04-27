@@ -9,9 +9,9 @@ An API test automation setup that you can apply in the real world.
 
 ## Features
 ### Test suite
-- [ ] [ServeRest][tool-serverest], an amazing server that simulates an e-commerce to be tested
-- [ ] [Mocha][tool-mocha], to manage tests
-- [ ] [Supertest][tool-supertest], to create and run API tests
+- [x] [ServeRest][tool-serverest], an amazing server that simulates an e-commerce to be tested
+- [x] [Mocha][tool-mocha], to manage tests
+- [x] [Supertest][tool-supertest], to create and run API tests
 - [ ] [Chai][tool-chai], to make assertions
 - [ ] [Faker][tool-faker], to generate randon data for tests
 - [ ] "Page Action" custom pattern, to organize the test structure
@@ -55,9 +55,14 @@ Check more available commands by visiting `scripts` session on `package.json` fi
   * `--spec '<file-path>/test-file.spec.js'`, to run specific test file
 
 Check other nice parameters by visiting the [Command Line Cypress page][ref-1].
+ -->
 
 ## References
 
+* [Supertest - Sample. Reference repo that inspired this one. Credits to the repo owner Paulo Gonçalves][ref-01]
+* [Writing Test with Supertest and Mocha for Expressjs Routes][ref-02]
+
+<!-- 
 * [Cypress Docs][ref-4]
 * [Utilizando Cypress na vida real][ref-2]
 * [Keep passwords secret in E2E tests][ref-3]
@@ -67,10 +72,13 @@ Check other nice parameters by visiting the [Command Line Cypress page][ref-1].
 * [ESLint + Prettier, a dupla perfeita para produtividade e padronização de código.][ref-8]
 * [Choose an open source license][ref-9]
 * [Como escolher uma licença para seu projeto][ref-10]
- -->
+-->
 
 <!-- Links list -->
 [flask-icon]: img/icon-lab-128.png "Flask icon"
+
+[ref-01]: https://github.com/PauloGoncalvesBH/sample-supertest
+[ref-02]: https://medium.com/@ehtemam/writing-test-with-supertest-and-mocha-for-expressjs-routes-555d2910d2c2
 
 [ref-1]: https://docs.cypress.io/guides/guides/command-line#Commands
 [ref-2]: https://medium.com/testbean/utilizando-cypress-na-vida-real-a93eec549128
