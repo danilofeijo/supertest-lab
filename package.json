@@ -1,0 +1,23 @@
+{
+  "name": "supertest-lab",
+  "version": "1.0.0",
+  "description": "An API test automation setup that you can apply in the real world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilofeijo/supertest-lab.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danilofeijo/supertest-lab/issues"
+  },
+  "homepage": "https://github.com/danilofeijo/supertest-lab#readme",
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "supertest": "^6.2.2"
+  }
+}
