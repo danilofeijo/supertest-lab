@@ -12,7 +12,7 @@ An API test automation setup that you can apply in the real world.
 - [x] [ServeRest][tool-serverest], an amazing server that simulates an e-commerce to be tested
 - [x] [Mocha][tool-mocha], to manage tests
 - [x] [Supertest][tool-supertest], to create and run API tests
-- [ ] [Chai][tool-chai], to make assertions
+- [x] [Chai][tool-chai], to make assertions
 - [ ] [Faker][tool-faker], to generate randon data for tests
 - [ ] "Page Action" custom pattern, to organize the test structure
 - [ ] Environment config, to run tests in multiple environment
