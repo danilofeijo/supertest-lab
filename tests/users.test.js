@@ -1,7 +1,7 @@
 const request = require('supertest')
-const assert = require('chai').assert
-const expect = require('chai').expect
 const chai = require('chai')
+const assert = chai.assert
+const expect = chai.expect
 chai.use(require('chai-json-schema'))
 
 const baseUrl = 'https://serverest.dev'
@@ -24,9 +24,7 @@ describe('GET' + routeUsuarios, () => {
     const res = await request(baseUrl).get(routeUsuarios).expect(200)
     
     // Assert
-    expect(res.body).to.be
-      .jsonSchema(resSchema)
-      .and.have.keys('quantidade', 'usuarios')
+    assert.jsonSchema(res.body, resSchema)
   })
 
   it('Return empty result', async () => {
@@ -45,9 +43,7 @@ describe('GET' + routeUsuarios, () => {
     const res = await request(baseUrl).get(routeUsuarios + '/' + userId).expect(400)
 
     // Assert
-    expect(res.body, 'Faltou propriedade').to.be
-      .jsonSchema(resSchema)
-      .and.have.keys('message')
+    assert.jsonSchema(res.body, resSchema)
   })
 
   it('Return user by ID', async() => {
@@ -76,9 +72,7 @@ describe('GET' + routeUsuarios, () => {
     const res = await request(baseUrl).get(routeUsuarios + '/' + userData._id).expect(200)
 
     // Assert
-    expect(res.body).to.be
-      .jsonSchema(resSchema)
-      .and.eql(userData)
+    assert.jsonSchema(res.body, resSchema)
 
     expect(res.body).to.have.property('nome', userData.nome)
     expect(res.body).to.have.property('email', userData.email)
